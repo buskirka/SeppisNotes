@@ -1,0 +1,36 @@
+\section{Smooth Maps}
+If $M$ and $N$ are topological manifolds, the natural notion of a 
+morphism is $f : M \to N$ continuous. Then two topological manifolds
+$M$, $N$, are equivalent if there exists a homeomorphism $f : M \to N$. 
+Topological manifolds together with continuous maps form a category.
+
+\begin{definition}
+A \textbf{category} consists of objects $C$ and arrows $A$. Each arrow
+goes from some object $C$ (the source) to another object (the target).
+These arrows are often called \textbf{morphisms}. Furthermore, for each
+object $c \in C$ there exists a morphism $1_c \in A$ such that the source
+and target of $1_c$ are both $c$. In addition, morphisms can be composed
+and composition satisfies additivity. For $x, y \in C$ we write 
+$\Hom(x,y) \subset A$ as the set of morphisms from $x$ to $y$. Stated this
+way, composition becomes
+\[ \circ : \Hom(x,y) \times \Hom(y,z) \to \Hom(x,z) \]
+\[ \circ : (f,g) \mapsto g \circ f \]
+\end{definition}
+
+\begin{example}
+The category of topological manifolds is defined by $C$ being the class of
+all topological manifolds with arrows $A$ being continuous maps between them.
+\end{example}
+
+For smooth manifolds, we need the correct notion of a morphism.
+
+\begin{definition}
+A map $f : M \to N$, $M$, $N$ smooth manifolds, is called \textbf{smooth}
+when for each chart $(U,\varphi)$ for $M$ and each chart $(V,\psi)$ for 
+$N$, the composition
+\[
+\psi \circ f \circ \varphi^{-1} \in C^\infty(\varphi(U),\R^n).
+\]
+The set of smooth maps from $M$ to $N$ is denoted $C^\infty (M,N)$. A smooth
+map with smooth inverse is called a \textbf{diffeomorphism}.
+\end{definition}
