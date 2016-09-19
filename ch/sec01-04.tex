@@ -16,3 +16,21 @@ way, composition becomes
 \[ \circ : \Hom(x,y) \times \Hom(y,z) \to \Hom(x,z) \]
 \[ \circ : (f,g) \mapsto g \circ f \]
 \end{definition}
+
+\begin{example}
+The category of topological manifolds is defined by $C$ being the class of
+all topological manifolds with arrows $A$ being continuous maps between them.
+\end{example}
+
+For smooth manifolds, we need the correct notion of a morphism.
+
+\begin{definition}
+A map $f : M \to N$, $M$, $N$ smooth manifolds, is called \textbf{smooth}
+when for each chart $(U,\varphi)$ for $M$ and each chart $(V,\psi)$ for 
+$N$, the composition
+\[
+\psi \circ f \circ \varphi^{-1} \in C^\infty(\varphi(U),\R^n).
+\]
+The set of smooth maps from $M$ to $N$ is denoted $C^\infty (M,N)$. A smooth
+map with smooth inverse is called a \textbf{diffeomorphism}.
+\end{definition}
