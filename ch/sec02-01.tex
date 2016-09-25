@@ -1,1 +1,18 @@
 \section{The general Construction}
+The tangent bundle to an $n$-manifold $M$ is a $2n$-manifold called
+$TM$ naturally constructed in terms of $M$. As a set, $TM$ is the
+disjoint union of the tangent spaces $T_p M$. We will now describe 
+the construction in detail.
+
+\begin{definition}
+Let $(U,\varphi)$ and $(V,\psi)$ be charts around $p \in M$.
+Let $u \in T_{\varphi(p)}\varphi(u)$ and $v\in T_{\psi(p)}\psi(v)$.
+Then $(U,\varphi, u)$ and $(V, \psi, v)$ are called equivalent when
+\[
+D(\psi \circ \varphi^{-1})(\varphi(p))(u) = v
+\]
+This is an equivalence relation, utilizing the chain rule.
+
+The set of equivalence classes of such triples is called the 
+\textbf{tangent space} to $p$ of $M$, denoted $T_p M$.
+\end{definition}
